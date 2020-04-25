@@ -1,5 +1,15 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>ContactItem.qml</file>
+        <file>icons/cama.png</file>
+        <file>icons/food.png</file>
+        <file>icons/Neudachin.png</file>
+        <file>ContactList.qml</file>
+        <file>MainToolBar.qml</file>
+        <file>TopRawLayout.qml</file>
+        <file>icons/bratok.png</file>
+        <file>icons/unknown.png</file>
     </qresource>
 </RCC>
