@@ -60,6 +60,7 @@ Window {
         }
 
         ContactList{
+            id: list
             Layout.fillHeight: true
             Layout.fillWidth: true
             model:contactsModel

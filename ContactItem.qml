@@ -21,8 +21,10 @@ Rectangle {
     width:parent.width
     height: 60
     RowLayout{
+
+
         anchors.fill: parent
-        spacing: 1
+
         anchors.leftMargin: 4
         anchors.rightMargin: 4
 
@@ -33,27 +35,35 @@ Rectangle {
             Layout.preferredWidth: height
             Layout.margins: 4
         }
-
         ColumnLayout{
+
+            Layout.fillWidth: true
             Layout.fillHeight: true
             spacing: 0.5
             Label{
                 id:label
                 Layout.fillHeight: true
+                elide: Label.ElideRight
                 color: "white"
                 font.bold:true
             }
             Label{
                 id:label1
                 Layout.fillHeight: true
+                elide: Label.ElideRight
                 color: "grey"
                 text:"Сообщение:"
+
             }
             Label{
                 id:label2
+
+                Layout.fillWidth: parent
                 Layout.fillHeight: true
+                elide: Label.ElideRight
                 color: "grey"
                 text:"Добро пожаловать в чат. Напишите..."
+
             }
 
         }
