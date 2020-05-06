@@ -6,7 +6,8 @@ Rectangle {
     id:me
     property alias icon: icon.source
     property alias text: label.text
-    property alias being: label1.text
+    property alias text1: label1.text
+    property alias text2: label2.text
     property bool selected: false
     signal leftClick()
     signal rightClick()
@@ -32,17 +33,29 @@ Rectangle {
             Layout.preferredWidth: height
             Layout.margins: 4
         }
+
         ColumnLayout{
+            Layout.fillHeight: true
+            spacing: 0.5
             Label{
                 id:label
+                Layout.fillHeight: true
                 color: "white"
                 font.bold:true
             }
             Label{
                 id:label1
+                Layout.fillHeight: true
+                color: "grey"
+                text:"Сообщение:"
+            }
+            Label{
+                id:label2
+                Layout.fillHeight: true
                 color: "grey"
                 text:"Добро пожаловать в чат. Напишите..."
             }
+
         }
     }
     MouseArea{

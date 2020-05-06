@@ -10,7 +10,8 @@ ListView{
     delegate: ContactItem{
         text: name
         icon: picture
-        being: beeing
+        text1: line1
+        text2: line2
         selected: list.currentIndex === index
         onLeftClick: {
             list.currentIndex = index

@@ -16,25 +16,27 @@ Window {
             name: "Яндыкс.чепожрать"
 
             picture: "icons/food.png"
-            beeing: "Добро пожаловать в чат. Напишите..."
+            line2: "Добро пожаловать в чат. Напишите..."
+            line1: "Бот:"
+
         }
         ListElement{
             name:"Кама"
 
             picture: "icons/cama.png"
-            beeing: "Привет. Как дела? Где деньги? Тшаааа"
+            line2: "Привет. Как дела? Где деньги? Тшаааа"
         }
         ListElement{
             name:"Браток"
             color: "White"
             picture: "icons/bratok.png"
-            beeing: "Добро пожаловать в чат. Напишите..."
+            line2: "Добро пожаловать в чат. Напишите..."
         }
         ListElement{
             name:"Неудачин"
             color: "White"
             picture: "icons/Neudachin.png"
-            beeing: "Перед сдачей 9 и 10 лабы напишите..."
+            line2: "Перед сдачей 9 и 10 лабы напишите..."
         }
 
 
