@@ -17,6 +17,7 @@ RowLayout{
         transformOrigin: Item.Center
         clip: false
         color: "#0f002d"
+        focus: true
 
         Layout.fillWidth: true
         selectByMouse: true
@@ -31,6 +32,7 @@ RowLayout{
 
     Button{
         text: "Добавить"
+        highlighted: true
         onClicked: {
             add();
         }

@@ -24,7 +24,7 @@ Window {
             name:"Кама"
 
             picture: "icons/cama.png"
-            line2: "Привет. Как дела? Где деньги? Тшаааа"
+            line2: "Привет. Как дела? Где деньги? Тшаааа, сюда иди! Жду."
         }
         ListElement{
             name:"Браток"
@@ -63,10 +63,24 @@ Window {
             id: list
             Layout.fillHeight: true
             Layout.fillWidth: true
-            model:contactsModel
+            model: contactsModel
+            onMenu: {
+                contactListMenu.popup();
+            }
         }
 
     }
+    Menu {
+            id: contactListMenu
+            modal: true
+            MenuItem {
+                text: "Выйти из чата"
+                onTriggered: {
+                    contactsModel.remove(list.menuIndex);
+                }
+            }
+        }
+
 }
 
 /*##^##
